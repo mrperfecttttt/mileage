@@ -14,7 +14,6 @@ CREATE TABLE location (
 
 CREATE TABLE travel (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    location VARCHAR(255) NOT NULL,
     date DATE NOT NULL,
     creds_id INT NOT NULL,
     FOREIGN KEY (creds_id) REFERENCES creds(id)
