@@ -1,6 +1,4 @@
 <?php
-// Start or resume session
-session_start();
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!isset($_SESSION['user_id'])) {
         // Handle error if user is not logged in
         echo "<script>alert('Please log in to add a new travel.');</script>";
-        echo "<script>window.location.href = 'login.php';</script>";
+        echo "<script>window.location.href = 'index.html';</script>";
         exit; // Stop script execution
     }
 
